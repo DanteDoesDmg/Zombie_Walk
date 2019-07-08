@@ -1,0 +1,67 @@
+body {
+    margin: 0;
+}
+
+.zombie {
+    width: 200px;
+    height: 312px;
+    background: url("../images/walkingdead.png");
+    animation: walk steps(9) 0.8s reverse infinite, movetochurch 8s ease-out;
+    position: absolute;
+    bottom: 100px;
+    right: -200px;
+
+    /*mały zombie*/
+    background-size: auto 100%;
+
+}
+
+@keyframes walk {
+
+    0% {
+
+    }
+    100% {
+
+        background-position-x: calc(100% * 9)
+    }
+}
+
+@keyframes move {
+    0% {
+
+    }
+    100% {
+        right: 100%;
+    }
+
+}
+
+@keyframes movetochurch {
+
+    0% {
+
+    }
+    100% {
+
+        /* mały zombie*/
+        height: 36px;
+        width: calc(200px * (36 / 312));
+        bottom: 29vh;
+        right: 78%;
+        filter: blur(0.2px);
+    }
+}
+
+.board {
+    height: 100vh;
+    min-height: 800px;
+    position: relative;
+    overflow: hidden;
+    background: rgb(0, 0, 0);
+    background-image: url(../images/board-bg.jpg);
+    background-size: 100vw 100vh;
+    background-position: center bottom;
+    background-repeat: no-repeat;
+}
+
