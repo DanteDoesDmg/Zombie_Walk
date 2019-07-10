@@ -6,7 +6,7 @@ demo link: https://dantedoesdmg.github.io/Zombie_Walk/
 
 A fun spritework animation of zombies rushing a church.
 
-### Does not work on Microsoft Edge
+##### Does not work on Microsoft Edge
 
 ## Technology used
 
